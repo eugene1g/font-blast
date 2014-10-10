@@ -1,9 +1,9 @@
 {
   "name": "font-blast",
-  "description": "Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator",
+  "description": "Converts any icon-font (FontAwesome etc) into individual SVG files for each icon.",
   "version": "0.2.0",
   "license": "MIT",
-  "author": "eugene1g",
+  "author": "eugene1g <eugene7pub@gmail.com>",
   "homepage": "https://github.com/eugene1g/font-blast",
   "repository": {
     "type": "git",
