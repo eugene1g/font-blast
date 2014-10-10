@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        @font-face {
+            font-family: 'SourceFont';
+            src: url('source-font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal
+        }
+
+        i {
+
+            display: inline-block;
+            font: normal normal normal 50px/1 SourceFont;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: _height_px;
+        }
+
+        img.svg-icon {
+            height: _height_px;
+        }
+        img.png-icon {
+            height: _height_px;
+        }
+
+        .row {
+            clear: both;
+            max-width: 1050px;
+            margin: 35px auto;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .row:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .col
+        {
+            float: left;
+            width: 200px;
+        }
+
+        .col.icon-ref
+        {
+            padding: 35px;
+            font-size: 20px;
+            color: silver;
+        }
+
+        .col.header
+        {
+            height: 40px;
+            padding: 0 5px;
+            font-weight: bold;
+            color: silver;
+            text-align: center;
+        }
+
+        _iconRules_
+    </style>
+</head>
+<body>
+_iconContent_
+</body>
+</html>
