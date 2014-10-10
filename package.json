@@ -14,7 +14,7 @@
   },
   "main": "lib/font-blast/index.js",
   "bin": {
-    "font-blast": "./bin/font-blast"
+    "font-blast": "./bin/font-blast.js"
   },
   "keywords": [
     "svg",
