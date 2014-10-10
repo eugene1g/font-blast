@@ -2,7 +2,7 @@
   "name": "font-blast",
   "description": "Font Awesome split to individual SVG and PNG files of different sizes along with Node.JS based generator",
   "version": "0.2.0",
-  "license": "proprietory",
+  "license": "MIT",
   "author": "eugene1g",
   "homepage": "https://github.com/eugene1g/font-blast",
   "repository": {
@@ -20,7 +20,6 @@
     "svg",
     "font",
     "icon",
-    "bootstrap",
     "extract"
   ],
   "dependencies": {
