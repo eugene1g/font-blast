@@ -35,10 +35,12 @@
     "xmldom": "0.1.*"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.0",
     "babel-jest": "^19.0.0",
-    "babel-preset-es2015": "^6.24.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
     "prettier": "^0.22.0",
-    "regenerator-runtime": "^0.10.3"
+    "regenerator-runtime": "^0.10.3",
+    "rimraf": "^2.6.1"
   }
 }

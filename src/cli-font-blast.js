@@ -2,8 +2,8 @@
 import fs from "graceful-fs";
 import pckg from "../package.json";
 import program from "commander";
-import blaster from "../lib/font-blast/index";
-import type { UserConf } from "../lib/font-blast/index";
+import blaster from "./index";
+import type { UserConf } from "./index";
 
 program
   .version(pckg.version)

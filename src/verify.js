@@ -14,7 +14,7 @@ function generateVerifyFile(svgFont: string, iconSet, withPng, toFolder) {
 
   //load the template for the verification file which contains some generic HTML
   let htmlTemplate = fs.readFileSync(
-    path.join(__dirname, "..", "verify.html"),
+    path.join(__dirname, "..", "/resources/verify.html"),
     "utf-8"
   );
   let iconContent = [];
