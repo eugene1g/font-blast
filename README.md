@@ -1,30 +1,28 @@
+## What is this
+Icon Fonts are cool - Font Awesome/Foundation/Fontello/etc all have great-looking and well thought out icons.
+`font-blast` can extract those cool icons from the font file, and create individual SVG/PNG files for every one of them.
 
-
-You can use font-blast to extract icons from any icon font - Font Awesome, Foundation, anything from Fontello etc. Font-blast will use the "super-font.svg " file to generate individual SVG/PNG files for each icon. 
-
-There are several reasons why you may want to split up the icon font:
-
- - **Use the icons outside of web pages** - so you can import individual icons as SVGs into Sketch, Illustrator, PowerPoint, or any other app to use for visual mockups/presentations.
- - **Modify & repackage icons** - you can change a specific icon to suit your taste, then repackage the font (with something like Font Squirrel) 
- - **Get high quality PNGs** - high-quality PNGs with a transparent backgrounds of any or all icons in the font
+## Why?
+ - **Use cool icons outside of web pages**.  If you have individual icons as SVGs, you can import them into Sketch, Illustrator, PowerPoint, or any other app to use for visual mockups/presentations.
+ - **Modify & repackage icons**. It's easy to change an individual SVG file, then repackage all images back into an icon-font (with e.g. Font Squirrel)
+ - **Get high quality PNGs**. Generate high-res PNGs with a transparent backgrounds to use in native applications, emails, etc.
 
 
 ## Installation
+Font-blast does not require PhantomJS or any other native binaries, so it should work pretty much everywhere.
 
-Font-blast is light-weight and has relatively few dependencies. Font-blast does not require PhantomJS or any other binaries on the system, so it should work pretty much everywhere. 
-
-Note: PNG images are generated with the embedded batik-rasterizer, and you will need have java installed to do that (but it is not necessary for SVG generation).   
+Note: PNG images are generated with the embedded batik-rasterizer, and you will need have java installed to do that. Evil Java is not required for generating SVG files.
 
     $ npm install font-blast
     
     
-## Barebones usage
+## CLI usage
 
 You can generate icons from the command line by called the script with two parameters: the SVG file of the font, and the directory where inidivual icons should be placed -
 ### CLI
 
-    $ font-blast [svg-font-file] [destination-dir]
-    $ font-blast font-awesome.svg fa-icons/ 
+    $ wget https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/fonts/fontawesome-webfont.svg
+    $ bin/font-blast.js fontawesome-webfont.svg fa-icons/
 
  
 ### Node
@@ -35,6 +33,3 @@ You can generate icons from the command line by called the script with two param
 ### Smarter filenames
 Just using the SVG file it is impossible to tell what the icon represents. Most icon-fonts have a mapping table which gives a human-friendly name to each unicode symbol.
 See https://github.com/eugene1g/font-blast-examples
-
-### Verification
-...
