@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg>
+    <metadata>
+        Created by FontForge 20120731 at Mon Oct 24 17:37:40 2016
+        By ,,,
+        Copyright Dave Gandy 2016. All rights reserved.
+    </metadata>
+    <defs>
+        <font id="FontAwesome" horiz-adv-x="1536">
+            <font-face
+                    font-family="FontAwesome"
+                    font-weight="400"
+                    font-stretch="normal"
+                    units-per-em="1792"
+                    panose-1="0 0 0 0 0 0 0 0 0 0"
+                    ascent="1536"
+                    descent="-256"
+                    bbox="-1.02083 -256.962 2304.6 1537.02"
+                    underline-thickness="0"
+                    underline-position="0"
+                    unicode-range="U+0020-F500"
+            />
+            <missing-glyph horiz-adv-x="896"
+                           d="M224 112h448v1312h-448v-1312zM112 0v1536h672v-1536h-672z"/>
+            <glyph glyph-name=".notdef" horiz-adv-x="896"
+                   d="M224 112h448v1312h-448v-1312zM112 0v1536h672v-1536h-672z"/>
+            <glyph glyph-name=".null" horiz-adv-x="0"
+            />
+            <glyph glyph-name="nonmarkingreturn" horiz-adv-x="597"
+            />
+            <glyph glyph-name="space" unicode=" " horiz-adv-x="448"
+            />
+            <glyph glyph-name="dieresis" unicode="&#xa8;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="copyright" unicode="&#xa9;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="registered" unicode="&#xae;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="acute" unicode="&#xb4;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="AE" unicode="&#xc6;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="Oslash" unicode="&#xd8;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="trademark" unicode="&#x2122;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="infinity" unicode="&#x221e;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="notequal" unicode="&#x2260;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="glass" unicode="&#xf000;" horiz-adv-x="1792"
+                   d="M1699 1350q0 -35 -43 -78l-632 -632v-768h320q26 0 45 -19t19 -45t-19 -45t-45 -19h-896q-26 0 -45 19t-19 45t19 45t45 19h320v768l-632 632q-43 43 -43 78q0 23 18 36.5t38 17.5t43 4h1408q23 0 43 -4t38 -17.5t18 -36.5z"/>
+            <glyph glyph-name="music" unicode="&#xf001;"
+                   d="M1536 1312v-1120q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v537l-768 -237v-709q0 -50 -34 -89t-86 -60.5t-103.5 -32t-96.5 -10.5t-96.5 10.5t-103.5 32t-86 60.5t-34 89
+t34 89t86 60.5t103.5 32t96.5 10.5q105 0 192 -39v967q0 31 19 56.5t49 35.5l832 256q12 4 28 4q40 0 68 -28t28 -68z"/>
+            <glyph glyph-name="search" unicode="&#xf002;" horiz-adv-x="1664"
+                   d="M1152 704q0 185 -131.5 316.5t-316.5 131.5t-316.5 -131.5t-131.5 -316.5t131.5 -316.5t316.5 -131.5t316.5 131.5t131.5 316.5zM1664 -128q0 -52 -38 -90t-90 -38q-54 0 -90 38l-343 342q-179 -124 -399 -124q-143 0 -273.5 55.5t-225 150t-150 225t-55.5 273.5
+t55.5 273.5t150 225t225 150t273.5 55.5t273.5 -55.5t225 -150t150 -225t55.5 -273.5q0 -220 -124 -399l343 -343q37 -37 37 -90z"/>
+            <glyph glyph-name="envelope" unicode="&#xf003;" horiz-adv-x="1792"
+                   d="M1664 32v768q-32 -36 -69 -66q-268 -206 -426 -338q-51 -43 -83 -67t-86.5 -48.5t-102.5 -24.5h-1h-1q-48 0 -102.5 24.5t-86.5 48.5t-83 67q-158 132 -426 338q-37 30 -69 66v-768q0 -13 9.5 -22.5t22.5 -9.5h1472q13 0 22.5 9.5t9.5 22.5zM1664 1083v11v13.5t-0.5 13
+t-3 12.5t-5.5 9t-9 7.5t-14 2.5h-1472q-13 0 -22.5 -9.5t-9.5 -22.5q0 -168 147 -284q193 -152 401 -317q6 -5 35 -29.5t46 -37.5t44.5 -31.5t50.5 -27.5t43 -9h1h1q20 0 43 9t50.5 27.5t44.5 31.5t46 37.5t35 29.5q208 165 401 317q54 43 100.5 115.5t46.5 131.5z
+M1792 1120v-1088q0 -66 -47 -113t-113 -47h-1472q-66 0 -113 47t-47 113v1088q0 66 47 113t113 47h1472q66 0 113 -47t47 -113z"/>
+            <glyph glyph-name="heart" unicode="&#xf004;" horiz-adv-x="1792"
+                   d="M896 -128q-26 0 -44 18l-624 602q-10 8 -27.5 26t-55.5 65.5t-68 97.5t-53.5 121t-23.5 138q0 220 127 344t351 124q62 0 126.5 -21.5t120 -58t95.5 -68.5t76 -68q36 36 76 68t95.5 68.5t120 58t126.5 21.5q224 0 351 -124t127 -344q0 -221 -229 -450l-623 -600
+q-18 -18 -44 -18z"/>
+            <glyph glyph-name="uniF2E1" unicode="&#xf2e1;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="_698" unicode="&#xf2e8;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="uniF2E9" unicode="&#xf2e9;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="uniF2EE" unicode="&#xf2ee;" horiz-adv-x="1792"
+            />
+            <glyph glyph-name="lessequal" unicode="&#xf500;" horiz-adv-x="1792"
+            />
+        </font>
+    </defs>
+</svg>
