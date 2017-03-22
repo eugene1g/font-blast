@@ -1,7 +1,7 @@
 {
   "name": "font-blast",
   "description": "Converts any icon-font (Font Awesome etc) into individual SVG files for each icon.",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "license": "MIT",
   "author": "eugene1g <eugene7pub@gmail.com>",
   "homepage": "https://github.com/eugene1g/font-blast",
@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/eugene1g/font-blast/issues"
   },
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "bin": {
     "font-blast": "./bin/font-blast.js"
   },
@@ -23,7 +23,12 @@
     "extract"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "compile": "rimraf lib/* && babel src -d lib",
+    "prepublish": "npm run compile"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["/lib/"]
   },
   "dependencies": {
     "commander": "2.*",

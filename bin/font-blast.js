@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-import fs from "graceful-fs";
-import pckg from "../package.json";
-import program from "commander";
-import blaster from "../lib/font-blast/index";
-import type { UserConf } from "../lib/font-blast/index";
+var fs = require("graceful-fs");
+var pckg = require("../package.json");
+var program = require("commander");
+var blaster = require("../lib/index").default;
 
 program
   .version(pckg.version)
@@ -26,7 +25,7 @@ program
   )
   .parse(process.argv);
 
-const svgFontFile = program.args[0], outputDir = program.args[1];
+var svgFontFile = program.args[0], outputDir = program.args[1];
 if (!svgFontFile || !outputDir) {
   program.help();
 }
@@ -36,7 +35,7 @@ if (!fs.existsSync(svgFontFile)) {
   process.exit();
 }
 
-const config: UserConf = {
+var config = {
   icons: program.icons,
   png: program.png,
   color: program.color
