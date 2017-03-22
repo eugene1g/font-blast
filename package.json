@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/eugene1g/font-blast/issues"
   },
-  "main": "lib/font-blast/index.js",
+  "main": "src/index.js",
   "bin": {
     "font-blast": "./bin/font-blast.js"
   },
