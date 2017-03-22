@@ -2,7 +2,7 @@
 var fs = require("graceful-fs");
 var pckg = require("../package.json");
 var program = require("commander");
-var blaster = require("../lib/index").default;
+var blaster = require("../lib/index");
 
 program
   .version(pckg.version)
