@@ -1,7 +1,7 @@
 {
   "name": "font-blast",
   "description": "Converts any icon-font (Font Awesome etc) into individual SVG files for each icon.",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "license": "MIT",
   "author": "eugene1g <eugene7pub@gmail.com>",
   "homepage": "https://github.com/eugene1g/font-blast",

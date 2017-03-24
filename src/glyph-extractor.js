@@ -9,7 +9,7 @@ const svgo = new SVGO({});
  * @param svgText Original SVG content
  * @reutrn string New SVG content
  */
-const optimizeSvgText = async (svgText: string): Promise<string> => {
+const optimizeSvgText = (svgText: string): Promise<string> => {
   type svgGoResult = {
     data: string,
     info: Object
@@ -110,17 +110,16 @@ function extractCharsFromFont(
     dataOnGlyphs = dataOnGlyphs.concat(charInfo);
   }
 
-  const cleanAllPromises = dataOnGlyphs.map(
-    async (charInfo: IconInformation) => {
-      const cleanSvg = await optimizeSvgText(charInfo.svg);
+  const cleanAllPromises = dataOnGlyphs.map((charInfo: IconInformation) => {
+    return optimizeSvgText(charInfo.svg).then(cleanSvg => {
       let newInfo = Object.assign({}, charInfo, {
         svg: cleanSvg,
         path: cleanSvg.match(/d="(.*?)"/)[1]
       });
       if (cleanCharacter) newInfo = cleanCharacter(newInfo);
       return newInfo;
-    }
-  );
+    });
+  });
 
   if (!callbackFn) return;
   if (cleanAllPromises.length === 0) callbackFn([]);
