@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /circulate
+    working_directory: ~/circulate
     docker:
       - image: jolicode/nvm
     steps:
