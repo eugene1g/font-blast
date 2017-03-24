@@ -6,18 +6,6 @@ jobs:
       - image: jolicode/nvm
     steps:
       - checkout
-#      - run:
-#          name: Initial OS config
-#          command: cat ~/.bashrc
-#      - run:
-#          name: Initial OS config
-#          command: source ~/.nvm/nvm.sh
-#      - run:
-#          name: Initial OS config
-#          command: cat ~/.nvm/nvm.sh
-#      - run:
-#          name: Initial OS config
-#          command: ls /usr/share/nvm
       - run:
           name: Testing with Node 4
           command: |
@@ -38,15 +26,3 @@ jobs:
           command: |
             source ~/.nvm/nvm.sh
             nvm install 7 && nvm use 7 && rm -rf node_modules && npm install && npm test
-#      - run:
-#          name: Run on Node 4
-#          command: nvm use 4 && rm -rf node_modules && npm install && npm test
-#      - run:
-#          name: Run on Node 5
-#          command: nvm use 5 && rm -rf node_modules && npm install && npm test
-#      - run:
-#          name: Run on Node 6
-#          command: nvm use 6 && rm -rf node_modules && npm install && npm test
-#      - run:
-#          name: Run on Node 7
-#          command: nvm use 7 && rm -rf node_modules && npm install && npm test
