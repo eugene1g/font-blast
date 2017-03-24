@@ -8,6 +8,9 @@ jobs:
       - checkout
       - run:
           name: Initial OS config
+          command: export NVM_DIR=/usr/share/nvm
+      - run:
+          name: Initial OS config
           command: . /usr/share/nvm/nvm.sh
       - run:
           name: Install Node 4,5,6,7
