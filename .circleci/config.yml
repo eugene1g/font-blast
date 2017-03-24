@@ -4,7 +4,6 @@ jobs:
     working_directory: ~/circulate
     docker:
       - image: node:6
-      - image: node:7
     steps:
       - checkout
       - run:
