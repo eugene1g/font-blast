@@ -6,11 +6,11 @@ jobs:
       - image: jolicode/nvm
     steps:
       - checkout
-      - run:
-          name: Testing with Node 4
-          command: |
-            source ~/.nvm/nvm.sh
-            nvm install 4 && nvm use 4 && rm -rf node_modules && npm install && npm test
+#      - run:
+#          name: Testing with Node 4
+#          command: |
+#            source ~/.nvm/nvm.sh
+#            nvm install 4 && nvm use 4 && rm -rf node_modules && npm install && npm test
       - run:
           name: Testing with Node 5
           command: |
