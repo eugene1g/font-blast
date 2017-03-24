@@ -7,6 +7,11 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Initial OS config
+          command: |
+              export NVM_DIR=~/.nvm
+              [ -s "~/.nvm/nvm.sh" ] && . "~/.nvm/nvm.sh"
+      - run:
           name: Install Node 4,5,6,7
           command: nvm install 4 && nvm install 5 && nvm install 6 && nvm install 7
       - run:
