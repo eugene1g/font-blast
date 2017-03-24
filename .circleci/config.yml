@@ -3,12 +3,21 @@ jobs:
   build:
     working_directory: ~/circulate
     docker:
-      - image: node:6
+      - image: livingdocs/nvm
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: npm install
+          name: Install Node 4,5,6,7
+          command: nvm install 4 && nvm install 5 && nvm install 6 && nvm install 7
       - run:
-          name: Run tests
-          command: npm test
+          name: Run on Node 4
+          command: nvm use 4 && rm -rf node_modules && npm install && npm test
+      - run:
+          name: Run on Node 5
+          command: nvm use 5 && rm -rf node_modules && npm install && npm test
+      - run:
+          name: Run on Node 6
+          command: nvm use 6 && rm -rf node_modules && npm install && npm test
+      - run:
+          name: Run on Node 7
+          command: nvm use 7 && rm -rf node_modules && npm install && npm test
