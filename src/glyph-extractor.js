@@ -121,9 +121,11 @@ function extractCharsFromFont(
     });
   });
 
-  if (!callbackFn) return;
-  if (cleanAllPromises.length === 0) callbackFn([]);
-  else Promise.all(cleanAllPromises).then(callbackFn);
+  var promise = Promise.all(cleanAllPromises);
+  if (callbackFn){
+    promise = promise.then(callbackFn);
+  }
+  return promise;
 }
 
 export default extractCharsFromFont;

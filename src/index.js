@@ -24,7 +24,7 @@ function mainBlaster(
   const config = Object.assign({}, defaultConfig, userConfig || {});
   const svgFontContent = fs.readFileSync(fontFile, "utf-8");
 
-  extractor(
+  return extractor(
     svgFontContent,
     config.filenames,
     function(characterSvgs: Array<IconInformation>) {
