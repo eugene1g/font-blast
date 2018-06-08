@@ -82,12 +82,13 @@ function extractCharsFromFont(
     //some glyphs matched without a unicode value so we should ignore them
     if (!iconCode) continue;
 
+    // handle encoded values
     if (iconCode.indexOf("&#") !== -1) {
       iconCode = iconCode.replace("&#x", "");
     }
-
-    if (iconCode.length === 1) {
-      iconCode = iconCode.charCodeAt(0).toString(16);
+    // handle unencoded values
+    else {
+      iconCode = iconCode.codePointAt(0).toString(16);
     }
 
     //Skip empty-looking glyphs
