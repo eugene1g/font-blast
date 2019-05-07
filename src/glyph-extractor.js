@@ -105,7 +105,7 @@ function extractCharsFromFont(
       path: pathData,
       svg: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${contentWidth} ${defaultCharHeight}">
         <g transform="scale(1,-1) translate(0 -${translateOffset})">
-            <path d="${pathData}"/>
+            <path fill="currentColor" d="${pathData}"/>
         </g></svg>`
     };
     dataOnGlyphs = dataOnGlyphs.concat(charInfo);
